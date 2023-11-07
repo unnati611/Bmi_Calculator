@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bmi</title>
+    <link rel="stylesheet" href="project8.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">BMI CALCULATOR</h2>
+      <div class="main">
+        <label for="weight">
+          Weight:&nbsp;
+          <input
+            id="weight"
+            class="input"
+            type="number"
+            placeholder="in kilogram"
+            name="number"
+        /></label>
+        <br />
+
+        <label for="Height"
+          >Height :&nbsp;<input
+            id="height"
+            class="input"
+            type="number"
+            placeholder="in centimeters"
+            name="number"
+        /></label>
+        <br />
+        <button class="submit" onclick="bmi()" id="btn">Submit</button>
+        <br />
+        <span id="ans"></span>
+      </div>
+      <div class="bmitable">
+        <table class="table">
+          <tr>
+            <th>BMI</th>
+            <th>status</th>
+          </tr>
+          <tr>
+            <td id="lightyellow">&le;18.4</td>
+            <td id="one">underweight</td>
+          </tr>
+          <tr>
+            <td id="green">18.5 - 24.9</td>
+            <td id="two">normal</td>
+          </tr>
+          <tr>
+            <td id="yellow">25.0-39.9</td>
+            <td id="three">overweight</td>
+          </tr>
+          <tr>
+            <td id="red">&ge;40.0</td>
+            <td id="four">obese</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="project8.js"></script>
+  </body>
+</html>
